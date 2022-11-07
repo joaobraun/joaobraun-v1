@@ -1,5 +1,6 @@
 'use strict';
 
+/*
 if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(
       function (position) {
@@ -12,3 +13,4 @@ if (navigator.geolocation) {
       }
     );
   };
+*/
