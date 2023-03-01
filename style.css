@@ -27,6 +27,16 @@ body {
     border: 1px solid black;
 }
 
+.bottomBtn {
+    align-items: center;
+    height: 40px;
+    width: 60px;
+    margin: 20px;
+    border: 1px solid black;
+    position: absolute;
+    left: 22%;
+}
+
 #numbers {
     color: white;
     text-align: center;
@@ -35,14 +45,4 @@ body {
     position: relative;
     margin: auto;
     font-weight: bold;
-}
-
-.bottomBtn {
-    align-items: center;
-    height: 40px;
-    width: 60px;
-    margin: 350px;
-    border: 1px solid black;
-    position: absolute;
-    left: 22%;
 }
