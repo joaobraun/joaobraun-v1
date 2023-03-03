@@ -15,9 +15,6 @@ body {
 	color: #0e0f3a;
 	line-height: 1.9;
     background-image: linear-gradient(270deg, #8d1c84, #213435  );
-    
-    /*background-image: linear-gradient(180deg, #de24d0, #240444);*/
-	/*background-image: linear-gradient(180deg, rgb(72, 22, 121), black);*/
 }
 
 button:focus {
