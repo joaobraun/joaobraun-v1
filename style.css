@@ -145,15 +145,25 @@ h1 {
 	background-image: linear-gradient(to bottom left,#80c0ee78, #bc3e57a4 );
 }
 
+.highlight-music {
+    text-shadow: none;
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+}
+
 .highlight-music:hover {
 	transition: all 0.3s;
 	transform: scale(1.07, 1.05) skewX(-15deg);
-	/*background-image: linear-gradient(to bottom left,#bc3e57a4, #80c0ee78);*/
-    /*background-image: linear-gradient( 90deg, #8d1c84, #213435 );*/
 	color: #240444;
     cursor: pointer;
     text-shadow: none;
+    filter: none;
 }
+
+
 
 .section {
 	padding: 10rem 3rem;
@@ -223,14 +233,7 @@ h1 {
 	opacity: 0;
 }
 
-.highlight-music:hover {
-    text-shadow: none;
-    -webkit-filter: blur(3px);
-    -moz-filter: blur(3px);
-    -o-filter: blur(3px);
-    -ms-filter: blur(3px);
-    filter: blur(3px);
-}
+
 
 .arrow-btn {
     display: inline-block;
