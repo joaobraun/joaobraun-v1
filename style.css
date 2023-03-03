@@ -14,7 +14,8 @@ body {
 	font-weight: 500;
 	color: #0e0f3a;
 	line-height: 1.9;
-    background-image: linear-gradient(90deg, #7e266b, #240444  );
+    background-image: linear-gradient(270deg, #8d1c84, #213435  );
+    
     /*background-image: linear-gradient(180deg, #de24d0, #240444);*/
 	/*background-image: linear-gradient(180deg, rgb(72, 22, 121), black);*/
 }
@@ -38,7 +39,7 @@ img {
 	z-index: 100;
 	background-image: linear-gradient(
 		to right,
-		#de24d0,
+		#213435,
 		#240444
 	);
 	font-family: "OCR A Std";
@@ -62,7 +63,7 @@ img {
 	display: flex;
 	align-items: center;
 	list-style: none;
-	color: #bc3e58;
+	color: #9d1680;
 }
 
 .nav__item {
@@ -70,7 +71,7 @@ img {
 }
 
 .nav__item:hover {
-	color: #80c1ee;
+	color: #00b9bd;
 }
 
 .nav__link:link,
@@ -108,6 +109,7 @@ img {
 	align-items: center;
 	justify-items: center;
 	height: 150px;
+    text-shadow: 5px 5px 5px #0e0f3a;
 }
 
 .header__footer {
@@ -124,11 +126,12 @@ img {
 h1 {
 	font-size: 5.5rem;
 	line-height: 1.35;
-    color:  #80c1ee;
+    color:  #00b9bd;
 }
 
 .highlight {
 	position: relative;
+    text-shadow: none;
 }
 
 .highlight::after {
@@ -146,10 +149,13 @@ h1 {
 }
 
 .highlight-music:hover {
-	
+	transition: all 0.3s;
 	transform: scale(1.07, 1.05) skewX(-15deg);
-	background-image: linear-gradient(to bottom left,#bc3e57a4, #80c0ee78);
-	color: #bc3e58;
+	/*background-image: linear-gradient(to bottom left,#bc3e57a4, #80c0ee78);*/
+    /*background-image: linear-gradient( 90deg, #8d1c84, #213435 );*/
+	color: #240444;
+    cursor: pointer;
+    text-shadow: none;
 }
 
 .section {
@@ -159,6 +165,10 @@ h1 {
 	align-items: center;
 	border-top: 1px solid #9d1680;
 	color: #f3f3f3;
+}
+
+#section--2 {
+    background-image: linear-gradient(270deg, #8d1c84,#213435, #000000  );
 }
 
 .section__title h2 {
@@ -171,15 +181,24 @@ h1 {
 }
 
 .video {
-	display: flex;
 	position: relative;
 	border: 0;
 	margin: auto;
+    align-items: center;
+}
+
+.video--player {
+    display: block;
+    margin: 0 auto;
+    width: 70%; 
+    box-shadow: 10px 10px 5px black;
+    backdrop-filter: blur(15px);
 }
 
 .soundcloud {
 	display: none;
 	align-items: center;
+    
 }
 
 .soundcloud a {
@@ -205,4 +224,27 @@ h1 {
 .hidden {
 	visibility: hidden;
 	opacity: 0;
+}
+
+.highlight-music:hover {
+    text-shadow: none;
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+}
+
+.arrow-btn {
+    display: inline-block;
+    background: none;
+    font-size: 1.7rem;
+    font-family: inherit;
+    font-weight: 500;
+    color: inherit;
+    border: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    cursor: pointer;
+    transition: all 0.5s;
 }
