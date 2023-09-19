@@ -2,7 +2,9 @@
 
 const nav = document.querySelector(".nav");
 const highlightBtn = document.querySelector(".highlight-music");
+const highlightBtnVideo = document.querySelector(".highlight-video");
 const soundcloudSet = document.querySelector(".soundcloud");
+const youtube = document.querySelector(".video");
 const navBtn = document.querySelector(".nav__link--btn");
 const section1 = document.getElementById("#section--1");
 const body = document.querySelector("body");
@@ -41,12 +43,20 @@ navBtn.addEventListener("click", function (e) {
 	e.preventDefault();
 });
 
+highlightBtnVideo.addEventListener("click", function (e) {
+    e.preventDefault();
+    if (youtube.style.display === "none") {
+		youtube.style.display = "block";
+	} else {
+		youtube.style.display = "none";
+	}
+})
+
 
 
 
 /*
-
-
+//for future implementation
 //sticky nav
 const header = document.querySelector(".header");
 const navHeight = nav.getBoundingClientRect().height;

@@ -187,6 +187,24 @@ h1 {
 	justify-content: flex-start;
 }
 
+.highlight-video {
+    text-shadow: none;
+    -webkit-filter: blur(1.5px);
+    -moz-filter: blur(1.5px);
+    -o-filter: blur(1.5px);
+    -ms-filter: blur(1.5px);
+    filter: blur(1.5px);
+}
+
+.highlight-video:hover {
+	transition: all 0.3s;
+	transform: scale(1.07, 1.05) skewX(-15deg);
+	color: #240444;
+    cursor: pointer;
+    text-shadow: none;
+    filter: none;
+}
+
 .video {
 	position: relative;
 	border: 0;
