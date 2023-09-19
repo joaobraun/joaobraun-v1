@@ -14,7 +14,7 @@ body {
 	font-weight: 500;
 	color: #0e0f3a;
 	line-height: 1.9;
-    background-image: linear-gradient(270deg, #8d1c84, #213435  );
+	background-image: linear-gradient(270deg, #213435, #000000);
 }
 
 button:focus {
@@ -34,11 +34,7 @@ img {
 	width: 100%;
 	padding: 0 6rem;
 	z-index: 100;
-	background-image: linear-gradient(
-		to right,
-		#213435,
-		#240444
-	);
+	background-image: linear-gradient(to right, #213435, #000000);
 	font-family: "OCR A Std";
 }
 
@@ -60,7 +56,7 @@ img {
 	display: flex;
 	align-items: center;
 	list-style: none;
-	color: #9d1680;
+	color: #00b9bd;
 }
 
 .nav__item {
@@ -68,7 +64,7 @@ img {
 }
 
 .nav__item:hover {
-	color: #00b9bd;
+	color: #bc3e57a4;
 }
 
 .nav__link:link,
@@ -85,14 +81,14 @@ img {
 .nav__link--btn:visited {
 	padding: 0.8rem 2.5rem;
 	border-radius: 3rem;
-	background-color: #9d1680;
+	background-color: #00b9bd;
 	color: #1c1e8d;
 }
 
 .nav__link--btn:hover,
 .nav__link--btn:active {
 	color: inherit;
-	background-color: #1c1e8d;
+	background-color: #bc3e57a4;
 	color: #8d1c84;
 }
 
@@ -106,7 +102,7 @@ img {
 	align-items: center;
 	justify-items: center;
 	height: 150px;
-    text-shadow: 5px 5px 5px #0e0f3a;
+	text-shadow: 5px 5px 5px #0e0f3a;
 }
 
 .header__footer {
@@ -123,59 +119,45 @@ img {
 h1 {
 	font-size: 5.5rem;
 	line-height: 1.35;
-    color:  #00b9bd;
+	color: #00b9bd;
 }
 
 .highlight {
-	position: relative;
-    text-shadow: none;
+	text-shadow: none;
+    opacity: 0.3;
+	color: linear-gradient(to bottom left, #213435, #bc3e57a4);
 }
 
-.highlight::after {
-	display: block;
-	content: "";
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	z-index: -1;
-	opacity: 0.7;
-	transform: scale(1.07, 1.05) skewX(-15deg);
-	background-image: linear-gradient(to bottom left,#80c0ee78, #bc3e57a4 );
-}
 
 .highlight-music {
-    text-shadow: none;
-    -webkit-filter: blur(1.5px);
-    -moz-filter: blur(1.5px);
-    -o-filter: blur(1.5px);
-    -ms-filter: blur(1.5px);
-    filter: blur(1.5px);
+	text-shadow: none;
+	-webkit-filter: blur(1.5px);
+	-moz-filter: blur(1.5px);
+	-o-filter: blur(1.5px);
+	-ms-filter: blur(1.5px);
+	filter: blur(1.5px);
 }
 
 .highlight-music:hover {
 	transition: all 0.3s;
 	transform: scale(1.07, 1.05) skewX(-15deg);
-	color: #240444;
-    cursor: pointer;
-    text-shadow: none;
-    filter: none;
+	color: #bc3e57a4;
+	cursor: pointer;
+	text-shadow: none;
+	filter: none;
 }
-
-
 
 .section {
 	padding: 10rem 3rem;
 	border-top: 1px solid #ddd;
 	transition: transform 1s, opacity 1s;
 	align-items: center;
-	border-top: 1px solid #9d1680;
+	border-top: 1px solid #bc3e57a4;
 	color: #f3f3f3;
 }
 
 #section--2 {
-    background-image: linear-gradient(270deg, #8d1c84,#213435, #000000  );
+	background-image: linear-gradient(270deg, #213435, #000000);
 }
 
 .section__title h2 {
@@ -188,42 +170,41 @@ h1 {
 }
 
 .highlight-video {
-    text-shadow: none;
-    -webkit-filter: blur(1.5px);
-    -moz-filter: blur(1.5px);
-    -o-filter: blur(1.5px);
-    -ms-filter: blur(1.5px);
-    filter: blur(1.5px);
+	text-shadow: none;
+	-webkit-filter: blur(1.5px);
+	-moz-filter: blur(1.5px);
+	-o-filter: blur(1.5px);
+	-ms-filter: blur(1.5px);
+	filter: blur(1.5px);
 }
 
 .highlight-video:hover {
 	transition: all 0.3s;
 	transform: scale(1.07, 1.05) skewX(-15deg);
-	color: #240444;
-    cursor: pointer;
-    text-shadow: none;
-    filter: none;
+	color: #bc3e57a4;
+	cursor: pointer;
+	text-shadow: none;
+	filter: none;
 }
 
 .video {
 	position: relative;
 	border: 0;
 	margin: auto;
-    align-items: center;
+	align-items: center;
 }
 
 .video--player {
-    display: block;
-    margin: 0 auto;
-    width: 70%; 
-    box-shadow: 10px 10px 5px black;
-    backdrop-filter: blur(15px);
+	display: block;
+	margin: 0 auto;
+	width: 70%;
+	box-shadow: 10px 10px 5px black;
+	backdrop-filter: blur(15px);
 }
 
 .soundcloud {
 	display: none;
 	align-items: center;
-    
 }
 
 .soundcloud a {
@@ -243,7 +224,7 @@ h1 {
 .soundcloud--player {
 	width: 49%;
 	padding: 5px;
-    color: #240444;
+	color: #240444;
 }
 
 .hidden {
@@ -251,18 +232,22 @@ h1 {
 	opacity: 0;
 }
 
-
-
 .arrow-btn {
-    display: inline-block;
-    background: none;
-    font-size: 1.7rem;
-    font-family: inherit;
-    font-weight: 500;
-    color: inherit;
-    border: none;
-    border-bottom: 1px solid currentColor;
-    padding-bottom: 2px;
-    cursor: pointer;
-    transition: all 0.5s;
+	display: inline-block;
+	background: none;
+	font-size: 1.7rem;
+	font-family: inherit;
+	font-weight: 500;
+	color: inherit;
+	border: none;
+	border-bottom: 1px solid currentColor;
+	padding-bottom: 2px;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+
+
+.highlight-text::after { 
+    transform: scale(1.07, 1.05) skewX(-15deg);
+	background-image: linear-gradient(to bottom left, #213435, #bc3e57a4);
 }
