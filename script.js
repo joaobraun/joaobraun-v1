@@ -9,8 +9,6 @@ const navBtn = document.querySelector(".nav__link--btn");
 const section1 = document.getElementById("#section--1");
 const body = document.querySelector("body");
 
-
-
 // nav fade animation
 const handleHover = function (e) {
 	if (e.target.classList.contains("nav__link")) {
@@ -28,7 +26,7 @@ const handleHover = function (e) {
 nav.addEventListener("mouseover", handleHover.bind(0.25));
 nav.addEventListener("mouseout", handleHover.bind(1));
 
-//display soudncloud player
+//display soundcloud player
 highlightBtn.addEventListener("click", function (e) {
 	e.preventDefault();
 
@@ -43,17 +41,15 @@ navBtn.addEventListener("click", function (e) {
 	e.preventDefault();
 });
 
+//display youtube player
 highlightBtnVideo.addEventListener("click", function (e) {
-    e.preventDefault();
-    if (youtube.style.display === "none") {
+	e.preventDefault();
+	if (youtube.style.display === "none") {
 		youtube.style.display = "block";
 	} else {
 		youtube.style.display = "none";
 	}
-})
-
-
-
+});
 
 /*
 //for future implementation
