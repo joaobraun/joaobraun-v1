@@ -147,11 +147,11 @@ h1 {
 
 .highlight-music {
     text-shadow: none;
-    -webkit-filter: blur(3px);
-    -moz-filter: blur(3px);
-    -o-filter: blur(3px);
-    -ms-filter: blur(3px);
-    filter: blur(3px);
+    -webkit-filter: blur(1.5px);
+    -moz-filter: blur(1.5px);
+    -o-filter: blur(1.5px);
+    -ms-filter: blur(1.5px);
+    filter: blur(1.5px);
 }
 
 .highlight-music:hover {
