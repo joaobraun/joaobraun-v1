@@ -34,7 +34,7 @@ img {
 	width: 100%;
 	padding: 0 6rem;
 	z-index: 100;
-	background-image: linear-gradient(to right, #213435, #000000);
+	background-color:#000000;
 	font-family: "OCR A Std";
 }
 
@@ -44,12 +44,12 @@ img {
 }
 
 .nav__logo {
-	height: 4.5rem;
+	height: 5.0rem;
 	/*transition: all 0.3s;*/
 	transition: transform 0.2s;
 }
 .nav__logo:hover {
-	transform: scale(1.8);
+	transform: scale(1.7);
 }
 
 .nav__links {
@@ -157,6 +157,7 @@ h1 {
 }
 
 #section--2 {
+    
 	background-image: linear-gradient(270deg, #213435, #000000);
 }
 
