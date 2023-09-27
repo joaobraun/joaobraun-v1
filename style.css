@@ -3,6 +3,10 @@
 	padding: 0;
 	box-sizing: inherit;
 }
+@media screen and (max-width: 414px){
+    .nav ul {display:none;}
+    .hamburger {display: flex !important; opacity: 0%;}
+}
 
 html {
 	font-size: 62.5%;
@@ -36,6 +40,20 @@ img {
 	z-index: 100;
 	background-color:#000000;
 	font-family: "OCR A Std";
+}
+
+.hamburger {
+    display: none;
+    opacity: 100%;
+    width: 32px;
+    height: 32px;
+    align-items: center;
+	list-style: none;
+    background-color: #000000;
+	color: #00b9bd;
+    border: none;
+    outline: none;
+    font-size: 1.7rem;
 }
 
 .nav.sticky {

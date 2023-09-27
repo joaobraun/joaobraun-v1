@@ -8,6 +8,7 @@ const youtube = document.querySelector(".video");
 const navBtn = document.querySelector(".nav__link--btn");
 const section1 = document.getElementById("#section--1");
 const body = document.querySelector("body");
+const hamburger = document.querySelector(".hamburger");
 
 // nav fade animation
 const handleHover = function (e) {
@@ -50,3 +51,5 @@ highlightBtnVideo.addEventListener("click", function (e) {
 		youtube.style.display = "none";
 	}
 });
+
+
