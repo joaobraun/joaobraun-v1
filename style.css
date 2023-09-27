@@ -3,7 +3,7 @@
 	padding: 0;
 	box-sizing: inherit;
 }
-@media screen and (max-width: 414px){
+@media screen and (max-width: 530px){
     .nav ul {display:none;}
     .hamburger {display: flex !important; opacity: 0%;}
 }
