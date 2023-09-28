@@ -6,6 +6,8 @@
 @media screen and (max-width: 530px){
     .nav ul {display:none;}
     .hamburger {display: flex !important; opacity: 0%;}
+    .soundcloud--player {display: block; width: 100% !important;}
+
 }
 
 html {
