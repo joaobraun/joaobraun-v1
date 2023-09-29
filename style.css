@@ -45,14 +45,20 @@
 		display: block;
 		width: 100% !important;
 	}
+    .content {
+        transform: translateX(0%);
+        transition: 0.3s ease-in;
+    }
 	.content.active {
         visibility: hidden;
 		opacity: 0;
-		transition: 0.3s ease-in-out;
+        transform: translateX(-50%);
+		transition: 0.3s ease-out;
 	}
 	img {
 		z-index: 1;
 	}
+
 }
 
 html {
