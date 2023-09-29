@@ -57,5 +57,5 @@ hamburger.addEventListener("click", function (e) {
 	e.preventDefault();
 	navLinks.classList.toggle("active");
 	webContent.classList.toggle("active");
-	sectionDisplay.classList.toggle("active");
+	hamburger.classList.toggle("active");
 });

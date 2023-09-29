@@ -12,7 +12,14 @@
 	.hamburger {
 		display: flex !important;
 		opacity: 0;
+        transition: 0.3s;
 	}
+
+    .hamburger.active {
+        transform: rotate(90deg) translate(10px, 8px);
+        color: #bc3e57a4;
+        
+    }
 	.nav__links {
 		opacity: 1;
 		position: absolute;
