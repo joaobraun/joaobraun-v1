@@ -7,7 +7,6 @@
 	body,
 	html {
 		position: relative;
-
 		overflow-x: hidden !important;
 	}
 	.hamburger {
@@ -40,10 +39,10 @@
 		width: 100% !important;
 	}
 	.content.active {
+        visibility: hidden;
 		opacity: 0;
-        transition: 0.3s ease-in-out;
+		transition: 0.3s ease-in-out;
 	}
-
 	img {
 		z-index: 1;
 	}
