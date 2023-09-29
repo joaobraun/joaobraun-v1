@@ -15,11 +15,7 @@
 	<body>
         
 		<header class="header">
-            
 			<nav class="nav">
-                <button class="hamburger">
-                    <i class="fa-solid fa-bars"></i>
-                  </button>
 				<img
 					src="resources/logo.png"
 					alt="logo"
@@ -28,6 +24,10 @@
 					designer="Jonas"
 					data-version-number="3.0"
 				/>
+                <button class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                  </button>
+                  
 				<ul class="nav__links">
 					<li class="nav__item">
 						<a
@@ -62,8 +62,8 @@
 				</ul>
 			</nav>
 		</header>
-
-		<section class="section" id="section--1">
+        <div class="content">
+		<section class="sectionDisplay" id="section--1">
 			<div class="section__title">
                 <div class="header__title">
                     <h1>                      
@@ -85,7 +85,7 @@
                 </div>
 		</section>
 
-		<section class="section" id="section--2">
+		<section class="sectionDisplay" id="section--2">
             <div class="header__title">
                 <h1>
                   <span class="highlight">my</span>
@@ -99,7 +99,7 @@
                 </iframe>
             </div>
 		</section>
-
+    </div>
 		<script src="script.js"></script>
         <script src="https://kit.fontawesome.com/fdf9479e33.js" crossorigin="anonymous"></script>
 	</body>

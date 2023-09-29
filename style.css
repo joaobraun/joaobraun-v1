@@ -3,16 +3,56 @@
 	padding: 0;
 	box-sizing: inherit;
 }
-@media screen and (max-width: 530px){
-    .nav ul {display:none;}
-    .hamburger {display: flex !important; opacity: 0%;}
-    .soundcloud--player {display: block; width: 100% !important;}
+@media (max-width: 530px) {
+	body,
+	html {
+		position: relative;
 
+		overflow-x: hidden !important;
+	}
+	.hamburger {
+		display: flex !important;
+		opacity: 0;
+	}
+	.nav__links {
+		opacity: 1;
+		position: absolute;
+		top: 8vh;
+		width: 100vw;
+		height: 92vh;
+		right: 0;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		background: #000000;
+		transform: translateX(100%);
+		transition: transform 0.3s ease-in;
+	}
+	.nav__links.active {
+		transform: translateX(0%);
+	}
+	.nav__links li {
+		margin-left: 0;
+		opacity: 1;
+	}
+	.soundcloud--player {
+		display: block;
+		width: 100% !important;
+	}
+	.content.active {
+		opacity: 0;
+        transition: 0.3s ease-in-out;
+	}
+
+	img {
+		z-index: 1;
+	}
 }
 
 html {
 	font-size: 62.5%;
 	box-sizing: border-box;
+	overflow-x: hidden;
 }
 
 body {
@@ -40,22 +80,22 @@ img {
 	width: 100%;
 	padding: 0 6rem;
 	z-index: 100;
-	background-color:#000000;
+	background-color: #000000;
 	font-family: "OCR A Std";
 }
 
 .hamburger {
-    display: none;
-    opacity: 100%;
-    width: 32px;
-    height: 32px;
-    align-items: center;
+	display: none;
+	opacity: 100%;
+	width: 32px;
+	height: 32px;
+	align-items: center;
 	list-style: none;
-    background-color: #000000;
+	background-color: #000000;
 	color: #00b9bd;
-    border: none;
-    outline: none;
-    font-size: 1.7rem;
+	border: none;
+	outline: none;
+	font-size: 1.7rem;
 }
 
 .nav.sticky {
@@ -64,7 +104,7 @@ img {
 }
 
 .nav__logo {
-	height: 5.0rem;
+	height: 5rem;
 	/*transition: all 0.3s;*/
 	transition: transform 0.2s;
 }
@@ -144,10 +184,9 @@ h1 {
 
 .highlight {
 	text-shadow: none;
-    opacity: 0.3;
+	opacity: 0.3;
 	color: linear-gradient(to bottom left, #213435, #bc3e57a4);
 }
-
 
 .highlight-music {
 	text-shadow: none;
@@ -167,7 +206,7 @@ h1 {
 	filter: none;
 }
 
-.section {
+.sectionDisplay {
 	padding: 10rem 3rem;
 	border-top: 1px solid #ddd;
 	transition: transform 1s, opacity 1s;
@@ -177,7 +216,6 @@ h1 {
 }
 
 #section--2 {
-    
 	background-image: linear-gradient(270deg, #213435, #000000);
 }
 
@@ -267,8 +305,7 @@ h1 {
 	transition: all 0.5s;
 }
 
-
-.highlight-text::after { 
-    transform: scale(1.07, 1.05) skewX(-15deg);
+.highlight-text::after {
+	transform: scale(1.07, 1.05) skewX(-15deg);
 	background-image: linear-gradient(to bottom left, #213435, #bc3e57a4);
 }

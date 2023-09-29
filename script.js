@@ -9,6 +9,8 @@ const navBtn = document.querySelector(".nav__link--btn");
 const section1 = document.getElementById("#section--1");
 const body = document.querySelector("body");
 const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav__links");
+const webContent = document.querySelector(".content");
 
 // nav fade animation
 const handleHover = function (e) {
@@ -52,4 +54,10 @@ highlightBtnVideo.addEventListener("click", function (e) {
 	}
 });
 
-
+//hamburger menu
+hamburger.addEventListener("click", function (e) {
+	e.preventDefault();
+	navLinks.classList.toggle("active");
+    webContent.classList.toggle("active");
+	sectionDisplay.classList.toggle("active");
+});
