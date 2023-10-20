@@ -321,3 +321,11 @@ h1 {
 	transform: scale(1.07, 1.05) skewX(-15deg);
 	background-image: linear-gradient(to bottom left, #213435, #bc3e57a4);
 }
+
+
+.sc {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
