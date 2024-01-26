@@ -30,12 +30,7 @@ nav.addEventListener("mouseout", handleHover.bind(1));
 //display soundcloud player
 highlightBtn.addEventListener("click", function (e) {
 	e.preventDefault();
-
-	if (soundcloudSet.style.display === "none") {
-		soundcloudSet.style.display = "block";
-	} else {
-		soundcloudSet.style.display = "none";
-	}
+	soundcloudSet.classList.toggle("hidden");
 });
 
 navBtn.addEventListener("click", function (e) {

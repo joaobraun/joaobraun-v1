@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap");
+
 * {
 	margin: 0;
 	padding: 0;
@@ -12,14 +14,13 @@
 	.hamburger {
 		display: flex !important;
 		opacity: 0;
-        transition: 0.3s;
+		transition: 0.3s;
 	}
 
-    .hamburger.active {
-        transform: rotate(90deg) translate(10px, 8px);
-        color: #bc3e57a4;
-        
-    }
+	.hamburger.active {
+		transform: rotate(90deg) translate(10px, 8px);
+		color: #bc3e57a4;
+	}
 	.nav__links {
 		opacity: 1;
 		position: absolute;
@@ -45,20 +46,19 @@
 		display: block;
 		width: 100% !important;
 	}
-    .content {
-        transform: translateX(0%);
-        transition: 0.3s ease-in;
-    }
+	.content {
+		transform: translateX(0%);
+		transition: 0.3s ease-in;
+	}
 	.content.active {
-        visibility: hidden;
+		visibility: hidden;
 		opacity: 0;
-        transform: translateX(-50%);
+		transform: translateX(-50%);
 		transition: 0.3s ease-out;
 	}
 	img {
 		z-index: 1;
 	}
-
 }
 
 html {
@@ -93,6 +93,7 @@ img {
 	padding: 0 6rem;
 	z-index: 100;
 	background-color: #000000;
+	border-bottom: 1px solid #bc3e5759;
 	/* font-family: "OCR A Std"; */
 }
 
@@ -218,13 +219,17 @@ h1 {
 	filter: none;
 }
 
+.content-container {
+	padding: 10rem 0 10rem 0;
+}
+
+.line-container {
+	border-top: 1px solid #bc3e5738;
+	margin: 0 10%;
+	width: 80%;
+}
 .sectionDisplay {
-	padding: 10rem 3rem;
-	border-top: 1px solid #ddd;
 	transition: transform 1s, opacity 1s;
-	align-items: center;
-	border-top: 1px solid #bc3e57a4;
-	color: #f3f3f3;
 }
 
 #section--2 {
@@ -268,38 +273,29 @@ h1 {
 .video--player {
 	display: block;
 	margin: 0 auto;
-	width: 70%;
+	height: 90vh;
+	width: 90%;
 	box-shadow: 10px 10px 5px black;
 	backdrop-filter: blur(15px);
 }
 
 .soundcloud {
-	display: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	align-items: center;
-}
-
-.soundcloud a {
-	font-size: 10px;
-	color: #cccccc;
-	line-break: anywhere;
-	word-break: normal;
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-	font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans,
-		Garuda, Verdana, Tahoma, sans-serif;
-	font-weight: 100;
-	text-decoration: none;
+	font-family: "Poppins";
+	padding: 0 3rem;
 }
 
 .soundcloud--player {
-	width: 49%;
+	width: 100%;
 	padding: 5px;
 	color: #240444;
 }
 
 .hidden {
-	visibility: hidden;
+	display: none;
 	opacity: 0;
 }
 
@@ -322,10 +318,20 @@ h1 {
 	background-image: linear-gradient(to bottom left, #213435, #bc3e57a4);
 }
 
-
 .sc {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.footer-info {
+	border-top: 1px solid #bc3e5738;
+	text-align: center;
+	color: #bc3e57a4;
+	font-size: medium;
+	margin: 0 auto;
+	padding: 1% 10%;
+	width: 80%;
 }
