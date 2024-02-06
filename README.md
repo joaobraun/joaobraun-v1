@@ -8,4 +8,5 @@ So while learning web development concepts and how to create a webpage for mysel
 
 
 # Future
-Although is good to put things in practice, I think I have to step up and I will replace this in the future. All things considered this was created in the beginning of my journey as a software developer, I'm still in it but I'll make it better.
+Although is good to put things in practice, this is now officially deprecated. All things considered this was created in the beginning of my journey as a software developer.
+The page is still acessible from <a href="https://joaobraun.github.io/joaobraun-old/">here!</a>
