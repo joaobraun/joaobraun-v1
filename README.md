@@ -4,9 +4,7 @@
 
 
 # Notes 
-So while learning web development concepts and how to create a webpage for myself, I decided it was time to have my own page using only the basic knowledge of ```javascript```, ```html``` and ```css``` I had at the time, also only the basic tools, no frameworks or nothing. 
+So while learning web development concepts and how to create a webpage for myself, I decided it was time to have my own page using only the basic knowledge of ```javascript```, ```html``` and ```css``` I had at the time.
 
 
-# Future
-Although is good to put things in practice, this is now officially deprecated. All things considered this was created in the beginning of my journey as a software developer.
 The page is still acessible from <a href="https://joaobraun.github.io/joaobraun-v1/">here!</a>
